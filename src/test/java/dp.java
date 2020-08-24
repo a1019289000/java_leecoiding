@@ -66,10 +66,10 @@ public class dp {
                     if (goods[goods[i][2]-1][3]==0){
                         if (goods[goods[i][2]-1][0]+goods[i][0]<sumMoney){
                             goods[i][3]=1;
-                            goods[goods[i][2]-1][0]=1;
+                            goods[goods[i][2]-1][3]=1;
                             dpp(goods,sumMoney-goods[i][0]-goods[goods[i][2]-1][0]);
                             goods[i][3]=0;
-                            goods[goods[i][2]-1][0]=0;
+                            goods[goods[i][2]-1][3]=0;
                         }
                     }
                     else{
